@@ -4,29 +4,50 @@
   <meta charset="UTF-8">
   <title>Khaana - Company Story & History</title>
   <style>
+    /* Brand Colors */
+    :root {
+      --primary-green: #2E8B57;   /* main brand green */
+      --secondary-green: #6b8e23; /* accent green */
+    }
+
+    /* Background setup */
     body {
       font-family: Arial, sans-serif;
-      margin: 40px;
-      background-color: #ffffff;
+      margin: 0; /* no margins so background covers full */
+      min-height: 100vh;
+      line-height: 1.6;
+      background-image: url("IMG_4924.PNG");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-attachment: fixed;
       color: #000000;
+    }
+
+    /* Content wrapper */
+    .content {
+      margin: 40px;
+      background-color: rgba(255, 255, 255, 0.9); /* light background for readability */
+      padding: 30px;
+      border-radius: 10px;
     }
 
     h1, h2 {
       font-family: Verdana, sans-serif;
-      color: #2E8B57;
     }
 
     h1 {
       font-size: 28px;
+      color: var(--primary-green);
     }
 
     h2 {
       font-size: 22px;
       margin-top: 30px;
+      color: var(--secondary-green);
     }
 
     p {
-      line-height: 1.6;
       font-size: 16px;
     }
 
@@ -36,7 +57,7 @@
     }
 
     a {
-      color: #2E8B57;
+      color: var(--secondary-green);
       text-decoration: underline;
     }
 
@@ -47,8 +68,8 @@
     }
 
     .about-box {
-      background-color: #eaf7f0;
-      border-left: 5px solid #2E8B57;
+      background-color: #f5fbe8;
+      border-left: 5px solid var(--primary-green);
       padding: 15px 20px;
       margin-bottom: 30px;
       border-radius: 5px;
@@ -62,7 +83,7 @@
     }
 
     .btn-download {
-      background-color: #2E8B57;
+      background-color: var(--secondary-green);
       color: white;
       padding: 10px 15px;
       text-decoration: none;
@@ -72,86 +93,80 @@
     }
 
     .btn-download:hover {
-      background-color: #256f46;
+      background-color: #556b2f;
     }
 
     footer {
       margin-top: 40px;
       font-size: 14px;
       text-align: center;
+      color: var(--primary-green);
     }
   </style>
 </head>
 <body>
-<style>
-  body {
-    background-image: url("IMG_4924.PNG");
-    background-size: cover;        /* stretch to fill */
-    background-repeat: no-repeat;  /* no tiling */
-    background-position: center;   /* centered */
-    margin: 0;
-    height: 100vh;
-  }
-</style>
 
-  <!-- Logo -->
-  <img src="Khanna_Logo.png" alt="Khaana Logo" class="logo">
+  <div class="content">
+    <!-- Logo -->
+    <img src="Khanna_Logo.png" alt="Khaana Logo" class="logo">
 
-  <!-- About Us Highlight Box -->
-  <div class="about-box">
-    <h1>About Us</h1>
+    <!-- About Us Highlight Box -->
+    <div class="about-box">
+      <h1>About Us</h1>
+      <p>
+        <b>Khaana</b> is a modern foodservice company founded in <u>2015</u> in Indianapolis, Indiana.  
+        Our mission is to <i>bring fresh, healthy, and locally-sourced meals</i> to communities while 
+        supporting sustainable farming practices. We proudly work with trusted partners such as 
+        <a href="https://fofarms.com" target="_blank">Fair Oaks Farms</a> to deliver quality food to families, schools, 
+        universities, and businesses across the Midwest.
+      </p>
+    </div>
+
+    <h2>Company Story & History</h2>
     <p>
-      <b>Khaana</b> is a modern foodservice company founded in <u>2015</u> in Indianapolis, Indiana.  
-      Our mission is to <i>bring fresh, healthy, and locally-sourced meals</i> to communities while 
-      supporting sustainable farming practices. We proudly work with trusted partners such as 
-      <a href="https://fofarms.com" target="_blank">Fair Oaks Farms</a> to deliver quality food to families, schools, 
-      universities, and businesses across the Midwest.
+      What began as a small kitchen has grown into a regional foodservice company that partners with 
+      <span style="color:var(--primary-green); font-weight:bold;">family-owned farms near Lafayette, Indiana</span>. 
+      Our goal has always been to provide nutritious food while building stronger communities.
     </p>
+
+    <h2>Our Journey</h2>
+    <ul>
+      <li>Delivering <b>fresh and sustainable meals</b></li>
+      <li>Building strong relationships with local farmers</li>
+      <li>Expanding healthy food access in underserved communities</li>
+    </ul>
+
+    <h2>Milestones</h2>
+    <ol>
+      <li>2015 – Founded in Indianapolis, IN</li>
+      <li>2017 – Expanded into catering and delivery services</li>
+      <li>2020 – Launched community outreach programs</li>
+      <li>2023 – Partnered with universities for student meal plans</li>
+    </ol>
+
+    <h2>Our Commitment</h2>
+    <p>
+      At Khaana, food is more than just a meal – it’s a way to bring people together.  
+      By partnering with <a href="https://fofarms.com" target="_blank">Fair Oaks Farms</a> and other 
+      local suppliers, we ensure every box we deliver is filled with care, quality, and sustainability.
+    </p>
+
+    <!-- PDF Download Button -->
+    <p style="text-align:center; margin-top:30px;">
+      <a href="Khaana_Company_Brochure.pdf" download class="btn-download">
+        📄 Download Company Brochure
+      </a>
+    </p>
+
+    <footer>
+      Contact us: <a href="mailto:khaanafoodservice@gmail.com">khaanafoodservice@gmail.com</a><br>
+      Last modified: <script>document.write(document.lastModified);</script>
+    </footer>
   </div>
 
-  <h2>Company Story & History</h2>
-  <p>
-    What began as a small kitchen has grown into a regional foodservice company that partners with 
-    <span style="color:#2E8B57; font-weight:bold;">family-owned farms near Lafayette, Indiana</span>. 
-    Our goal has always been to provide nutritious food while building stronger communities.
-  </p>
-
-  <h2>Our Journey</h2>
-  <ul>
-    <li>Delivering <b>fresh and sustainable meals</b></li>
-    <li>Building strong relationships with local farmers</li>
-    <li>Expanding healthy food access in underserved communities</li>
-  </ul>
-
-  <h2>Milestones</h2>
-  <ol>
-    <li>2015 – Founded in Indianapolis, IN</li>
-    <li>2017 – Expanded into catering and delivery services</li>
-    <li>2020 – Launched community outreach programs</li>
-    <li>2023 – Partnered with universities for student meal plans</li>
-  </ol>
-
-
-  <h2>Our Commitment</h2>
-  <p>
-    At Khaana, food is more than just a meal – it’s a way to bring people together.  
-    By partnering with <a href="https://fofarms.com" target="_blank">Fair Oaks Farms</a> and other 
-    local suppliers, we ensure every box we deliver is filled with care, quality, and sustainability.
-  </p>
-
-  <!-- PDF Download Button -->
-  <p style="text-align:center; margin-top:30px;">
-    <a href="Khaana_Company_Brochure.pdf" download class="btn-download">
-      📄 Download Company Brochure
-    </a>
-  </p>
-
-  <footer>
-    Contact us: <a href="mailto:khaanafoodservice@gmail.com">khaanafoodservice@gmail.com</a><br>
-    Last modified: <script>document.write(document.lastModified);</script>
-  </footer>
-
 </body>
+</html>
+
 </html>
 
 
