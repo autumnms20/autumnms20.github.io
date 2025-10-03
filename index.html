@@ -4,47 +4,46 @@
   <meta charset="UTF-8">
   <title>Khaana - Company Story & History</title>
   <style>
-    /* Brand Colors */
     :root {
-      --primary-green: #2E8B57;   /* main brand green */
-      --secondary-green: #6b8e23; /* accent green */
+      --primary-green: #2E8B57;   /* Sea Green */
+      --secondary-green: #6b8e23; /* Olive Drab */
     }
 
-    /* Background setup */
+    /* Reset and background fix */
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      min-height: 100%;
+    }
+
     body {
-      font-family: Arial, sans-serif;
-      margin: 0; /* no margins so background covers full */
-      min-height: 100vh;
-      line-height: 1.6;
-      background-image: url("IMG_4924.PNG");
+      background: url("IMG_4924.PNG") no-repeat center center fixed;
       background-size: cover;
-      background-repeat: no-repeat;
-      background-position: center;
-      background-attachment: fixed;
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
       color: #000000;
     }
 
     /* Content wrapper */
     .content {
       margin: 40px;
-      background-color: rgba(255, 255, 255, 0.9); /* light background for readability */
+      background-color: rgba(255, 255, 255, 0.9); /* readability */
       padding: 30px;
       border-radius: 10px;
     }
 
-    h1, h2 {
-      font-family: Verdana, sans-serif;
-    }
-
     h1 {
+      font-family: Verdana, sans-serif;
       font-size: 28px;
-      color: var(--primary-green);
+      color: var(--primary-green); /* Sea green */
     }
 
     h2 {
+      font-family: Verdana, sans-serif;
       font-size: 22px;
       margin-top: 30px;
-      color: var(--secondary-green);
+      color: var(--secondary-green); /* Olive drab */
     }
 
     p {
@@ -93,7 +92,7 @@
     }
 
     .btn-download:hover {
-      background-color: #556b2f;
+      background-color: #556b2f; /* darker olive */
     }
 
     footer {
@@ -166,8 +165,5 @@
 
 </body>
 </html>
-
-</html>
-
 
 
